@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Café americano",
+    "price": 500,
+    "haveOptions": false,
+    "options": [],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "001",
+    "selectedOption": null
+  },
+  {
+    "name": "Café con leche",
+    "price": 700,
+    "haveOptions": false,
+    "options": [],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "002",
+    "selectedOption": null
+  },
+  {
+    "name": "Jugo natural",
+    "price": 700,
+    "haveOptions": false,
+    "options": [],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "003",
+    "selectedOption": null
+  },
+  {
+    "name": "Sandwich de jamón y queso",
+    "price": 1000,
+    "haveOptions": false,
+    "options": [],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "004",
+    "selectedOption": null
+  },
+  {
+    "name": "Hamburguesa simple",
+    "price": 1500,
+    "haveOptions": true,
+    "options": ["res", "pollo", "vegetariana"],
+    "extras": [
+      { "name": "Queso", "add": false },
+      { "name": "Huevo", "add": false }
+    ],
+    "priceExtra": 500,
+    "image": "url",
+    "id": "005",
+    "selectedOption": null
+  },
+  {
+    "name": "Hamburguesa doble",
+    "price": 2500,
+    "haveOptions": true,
+    "options": ["res", "pollo", "vegetariana"],
+    "extras": [
+      { "name": "Queso", "add": false },
+      { "name": "Huevo", "add": false }
+    ],
+    "priceExtra": 500,
+    "image": "url",
+    "id": "006",
+    "selectedOption": null
+  },
+  {
+    "name": "Papas fritas",
+    "price": 500,
+    "haveOptions": false,
+    "options": [],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "007",
+    "selectedOption": null
+  },
+  {
+    "name": "Onion Rings",
+    "price": 500,
+    "haveOptions": false,
+    "options": [],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "008",
+    "selectedOption": null
+  },
+  {
+    "name": "Agua 500ml",
+    "price": 500,
+    "haveOptions": true,
+    "options": ["con gas", "sin gas"],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "009",
+    "selectedOption": null
+  },
+  {
+    "name": "Agua 750ml",
+    "price": 800,
+    "haveOptions": true,
+    "options": ["con gas", "sin gas"],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "010",
+    "selectedOption": null
+  },
+  {
+    "name": "Gaseosa 500ml",
+    "price": 700,
+    "haveOptions": true,
+    "options": ["coca cola", "fanta", "sprite", "canada dry"],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "011",
+    "selectedOption": null
+  },
+  {
+    "name": "Gaseosa 750ml",
+    "price": 1000,
+    "haveOptions": true,
+    "options": ["coca cola", "fanta", "sprite", "canada dry"],
+    "extras": [],
+    "priceExtra": null,
+    "image": "url",
+    "id": "012",
+    "selectedOption": null
+  }
+]
