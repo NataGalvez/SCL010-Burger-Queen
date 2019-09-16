@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Mesa 1",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 2,
+    "name": "Mesa 2",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 3,
+    "name": "Mesa 3",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 4,
+    "name": "Mesa 4",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 5,
+    "name": "Mesa 5",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 6,
+    "name": "Mesa 6",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 7,
+    "name": "Mesa 7",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 8,
+    "name": "Mesa 8",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 9,
+    "name": "Mesa 9",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "id": 10,
+    "name": "Mesa 10",
+    "cliente": null,
+    "ordenes": []
+  }
+]
