@@ -1,5 +1,6 @@
 :root {
   --blue: rgba(1, 169, 244, 0.84);
+  --orange: #ff8246;
   --lightBlue: rgba(1, 169, 244, 0.43);
   font-family: "Source Sans Pro", sans-serif;
 }
@@ -14,6 +15,21 @@
   font-size: 18px;
 }
 
+.orangeBtn {
+  width: 276px;
+  height: 71px;
+  border-radius: 8px;
+  background-color: var(--orange);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 button {
   border: 0px;
+}
+
+h1 {
+  font-style: normal;
+  color: #555454;
 }
