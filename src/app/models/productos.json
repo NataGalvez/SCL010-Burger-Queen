@@ -7,7 +7,8 @@
     "priceExtra": null,
     "image": "http://www.starbucks.cl/media/caffe-americano_tcm102-18506_w1024_n.png",
     "id": "001",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "desayuno"
   },
   {
     "name": "Café con leche",
@@ -18,7 +19,8 @@
     "priceExtra": null,
     "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwoQEA0JCQkQEA0ICA0JCAgICBAIDQoWIB0iIiAdHx8kHTQsJCYxJxMfLT0tMTU3OjouIys/ODM4Nyg5LisBCgoKDg0OEBAQDjcZExksKzc3NysrKysrNy0tLS0tLS0rLSsrKysrLSsrLSstKy0rKysrKysrKysrKysrKysrK//AABEIAIAAgAMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAEAgMFBgcBAP/EAD4QAAEDAgMFBAcHAgYDAAAAAAECAxEABAUSIQYxQVFhEyIycRRCgZGhsfAHI1LB0eHxM2IkNENFU3IVFhf/xAAZAQADAQEBAAAAAAAAAAAAAAAAAQIDBAX/xAAlEQACAgEDBAEFAAAAAAAAAAAAAQIRAxIhMQRBUWETIkJScYH/2gAMAwEAAhEDEQA/AMaH1rTgH1NJApYTTEdAr1LCa9FADf1vpMfU0ZZ2Nw8oNW1utxZOiGGy4qrfh32ZYksBd881bJOpS4vtVx1H70n7Aof1vpJmtWY2AwNv/M3r7xHjDOVhJ8oBoprZnZlP+3OL6vXjh+Eioc4r7itL8GPRXorZf/XtmDocJIn1kXbgI+NNObFbMOSG/SGSdxTcl4fGaFkj+Q9L8GP13631pt59ljatcNxdCiT3WbxHZk9Af2qoY5sji1nJvLJWQbrlgdu0R5irVPh2SQQrxNdiuxQAjX6Nej6ml5a9loAWE06lNcQmiEIqgG8tXjZfYIuJTe4wss25GdFqnuPvjh/1+dG7AbMt5DjWIIGRs/4JlY0WfxH5D31YLm6dfWYOkwBwArLJkUP2OMbH27thhPo+FWyWkAZR2aBmX5mmizcOd952ATuUqSfIV1xTTQCWRncI7y1HQGmEZlCX17ye6nSOVebm6vfydUMI8lhkT3icmiyDu6UpQtkgKLRM7p40J6UlEhOsnvFQ3xuoK+xFzu5dAdISiTXI+obN1iROWvoqjBbAknuq0+NErw1k+FBTOoOckVW2rtWhg6GCojIlA6mrVhVz2jcqgkHKFA76rDn1WmtyZwoCcwm4QMzUlI1BQoLHwpy2xW4b+6eGZKvEh1MpIqVQI1SSOMgxTN+jOO+AYGhjWuuE3G6Zi4p9ir4/sVhd8C9h4TbXRBVlQPunD1HCsqxfCLq0dVa3jRQtOonVKxzB6862QhTZzJJ7p3cqNvsJs8SY7C8HfaOdh9o5HEDoT/FdmHPr2fJhOFGBZPqa7lra/wD5jg4SCEvnMmQs3M/lVb2o+z1LTarnDHFr7MZnLV2FqI6H8q6KIKC2mpLCbEvvM2qdDcXCG55Dn7poC31AI4ias+xAAvrVSuDigk8u6f1poDQseUG0s2LIyoQgJShOkAQKEyZGwfWWrKjqKKx5B7ZCvxIMUKtfhSoAgJzADek15PVydyOvClSGUqIHnvmg7i5UdB/FFOoJ8CZnfxgUG9bLSJUkieMED9+Nebpk7dHWqGCrnPzom3bn1AdNCaYaTrHM8asmHMpSnVGYkaKOoFRGNvmgcq7AVsynRLrGcATvpVoXWVnSWnFEpCTJSetSgVrMRGsQNKbyz6o1VJnhyitlH3uiG7H2LwKOU6TRipj9eIqHGYLCuEQsRoRUm2qQDm4SK2hPmzOSEP26VBQGispLauA6e2gMOeLawOClxHKpJSuPKowo74j/AJB763jKpJoiS2ZJY3ilxbJSbdGbt1ZcxUYT1IqlX21uI5iA4nRRByIFXHadKuzaQg95xRSifdVAdsIVlAzLKvCNTNek5VvdHPGOqlGP1FDwgkgJ4iIrVdj9kVJAvLuUu5M9q0THZHgpX5Cq99mGzYKf/L3iPu0ry2DSxo4rio9Aa0B+7UruA6FRJA4k6a1rZkE3rHbtB1vxt+JI1M1EBaZyr0PDNpT7OIG3clc9k9qsATlPl86kbzDmX09taqTJ7xRIINcXVYdatcm+Kdcg1ulnwrEKiUpURlVy1qPxkaZUp9bOeUbv1+FEBC0nIsQUHTOIPWluJzATwGp5158m1FxapnUnw7IO1tVFQJG7U1YbZUCDrG4cKYbb4REnSBwpyNNPZpWEYtFylYgvyrs0jWYCQN5pGYalUiD3tI1ohu2SVZ0qyrCgtCgdKFcWM5Qs99xcDulYnryp6X/SbRxJHAyToAVcKNtAYk8ue6hU22oJUAN5hMSfOpBsADfw151UIuxSkqOvqgb9ToBNewy1Kl5z4WzKlEaE/tTjNktZzud1CdRm0JFC43jSGkG1tCCvLCloOieWvOvRw4W2pPZHNknykexFKbp1xtFwW0WyewahAXnV5+7TzrLMQvcUw67U3fmQ4qWnkpKWnkcx+laJaIWkJk6gJKzzP8zS8ewmzxC3NhcEByCu0uD4mVfpwrraUrT2Jw5ZYpqUXuhy7U20hFswkJat20tstp9UDT8qYt9T5mh713MskHQqhI5Dh8KNsGydY0SASeVFmdHMaZlkKj+iuZCdYO+TxqCs8SfZMtKMDegnQ1clsBbamjucQUTviqFcgpWthwZVtmFJJ8Q6U0FFxtdpbN6G7xsBRgFZFHotLZfet7gCfVWrd7f3rNnBSEXb6D908pMb4UYqZ44y5jZSk13NLXhj47yQCOaVaUj0Jz8B1PAzFUNjanEm9EugjzINEp23vty0TI1UYrB9LAv5JFwctXNCGzIO6Ypg4c+VZykJneSvUCqqvbO7O5IE81aUI/tPfq3OR1FS+miP5GX426Egdo+nlETB86FuMcsmdNFEHeIMnyrPXL+6X431Gd8GkFaQMyzHNazpWkMKW9EOTfctOJ7TXD33bXcQdDl3mhMNR2jzbZ1DZDzhPE9fbr7KhLW6bWCtC5Deizyqy4AyoILqtC8rMOcfxW/ozJe5dA3VV8Xu1N3eHu5iO0uXLcidCFJ4+4VZVMqIJHqpKleVUnatc3mGW4OvpXbFPIfQNCXIWWXj7d/Op/Df6bh5ltI+f5VBEa+2pWxWYKecfCaRRJIOlQW0uCpfHbISc7e8o0UOoI+VTSDTiTEGdUmQQaYGV3KLxo+APJBjMD2ax59aDXiBHitnQTvHZ560LGrJtZLiRlUSSSkaK8xVLvmXAo6bpGmtAgUOgid065VCCKQo6j2mm1p4a+UVxBgifwka0WUKeeQgZ3DABAmKGOKs+qlSjwyogGlYhY9qBlchSTKOKfbTDWEH/Uf3+qhGn1+tCBjFziLx1R3AFAQNVHXWvNJuHyPEofjX3Eo5aVJs4cwn1cx5r1M1L2Npm18KUjQpTqfKmQM4Zh+bLbp8DZzPuARmO+rraAAADclIAqLtUAAIQISOA+dS7CdPZRQglt8JOsQpJSsKHCsxt7j0vGS4nVuxStDRG6EiJ9pNWPbrHRasKbbV9/dBTbISdUc1e7d1ioD7N7IpQ9fLH9dXZtE7yBv+PypgXl1BzUbZmk3bUGa6wYI60iyTbGlLNIZWI+dV3anbWysyWEJL1zH+WbVCW53Zj+QE+VAElfD51XsStAsZm9CN/Cap979omJqUcrTKEzo2WlEn2zRWFbdtLIbv2uzKtA+1KkDzG+iiR98KTIWjw+skVGu3bM95C9OTeh+FXJTLLqQtOVSVjMlaSCFDoRQD2Etct/Wahoorib1vchp09MoApbbjqjCW8o/E4qT7BU4MLbG74U6iwQOHvNNAwC2YnTnBUojfUywzoEpEaU4xapH5RRYSKpEirdoD2V7FMTZtmV3L6wEtDdOqzwA50xfYixbtqfuFhKGwZPFR6DryrKdpsfevHMypS03It7edE9T1ppCEYheXWIXWcjv3LgbZbElLQ4CtPw62Sy21bNjusoCBHHn8ZNVjYjBS2n055MOPpi3QoaoSePt+VXNhskjrQwDcHxJF0ylzc4lOR5HJQHCnZKe7G4yOo5VneFYm7auB9ElBMPNg+IfqOFaRZPM3TYftlhRKJyjeeceXEVTQ7AcaxNbFrcXDOq2rdam/7VfWtZ/9mNywb5z02Fu3LC1WztwO078yr2kca0K9tQpK2nESh1BbWnmDp+dY/jOF3Ng+IUoZXO0s7pOkgH5jjUA2bRjuAWN2gt3NunNH3b7aQ242ehA+G6sd2q2WubFUq79utRDVygfBQ4H4cq0jZDbBm8SGHyEXTaIcbJhL39yf0qfvbVl1CmH0BSHUFC0LEginQWY1sntGu1WGHlE2zqoWgyeyPMdK0woChmSZCgFJIMgjzrMtsdmnLF2USq2fUfR3SZKf7T1A+FW37OcQU9brtHCSqxUEoJ35Du/OnQWTharqWqPLP0aAxLErS3Ge6fQiRKUlcrV5CnpFY6nT5a1F45j9raJl1WZwg9nbIVKl+f61Vsc24WoFrDm8gVINy4O8R0HCqowzc3DkIQt11wyoiVq99IAjHMaubtfavr0ST2bCNENjoKl9k9nFOlN3dIhpBzNNqGrxHGOX1uqXwDYpKIfv4UsQpNsnvJQevOrpb2wEQIjQADdToLGmbc6H3AbhUrZ2/OPM7hXm2hAB3CofanaJu0bKUEF1wZW0Tv8A43mmok2f/9k=",
     "id": "002",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "desayuno"
   },
   {
     "name": "Jugo natural",
@@ -29,7 +31,8 @@
     "priceExtra": null,
     "image": "https://assets.tetrapak.com/static/publishingimages/about-tetra-pak/rollup/juice-glass.jpg",
     "id": "003",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "desayuno"
   },
   {
     "name": "Sandwich de jamón y queso",
@@ -40,7 +43,8 @@
     "priceExtra": null,
     "image": "http://www.starbucks.com.pe/media/croissant-mixto-sandwiches_tcm92-18707_w1024_n.png",
     "id": "004",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "desayuno"
   },
   {
     "name": "Hamburguesa simple",
@@ -59,7 +63,8 @@
     "priceExtra": 500,
     "image": "https://fastly.4sqi.net/img/general/128x128/13385944_qB0tgxrXtmy0KQx9gCfAiYwqPiVNT0SYj1rAPG413Jw.jpg",
     "id": "005",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Hamburguesa doble",
@@ -78,7 +83,8 @@
     "priceExtra": 500,
     "image": "https://fastly.4sqi.net/img/general/128x128/13385944_qB0tgxrXtmy0KQx9gCfAiYwqPiVNT0SYj1rAPG413Jw.jpg",
     "id": "006",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Papas fritas",
@@ -89,7 +95,8 @@
     "priceExtra": null,
     "image": "https://www.masmasa.cl/wp-content/uploads/2018/01/Papas-Fritas-Steak-House-128x128.jpg",
     "id": "007",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Onion Rings",
@@ -100,7 +107,8 @@
     "priceExtra": null,
     "image": "https://fastly.4sqi.net/img/general/128x128/10995737_B8ScITJ_x3qxeDBQhxSrMy2eSrp3oQs5rgID03JWZCs.jpg",
     "id": "008",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Agua 500ml",
@@ -111,7 +119,8 @@
     "priceExtra": null,
     "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHDgkOBxEKEBALFxYPFxEUGRsaHRoWIBEiIiAdHx8kKDQsGh4xJx8fLTEkMSo3OjouGSszRDMtNzQvLisBCgoKDQ0NGg8NGjcaHyU3Nzc3Nzc3Nzc3Kzc3OC03MDc4Nys3Nzc3LSszMDAtKy03OCs3Lzc3LSs3MystNysrOP/AABEIADIAMgMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAABQcBBAYD/8QALRAAAQMCAwUHBQAAAAAAAAAAAQACAwQRBiExBQcTkbESFEFRYXGhIiMyQoH/xAAXAQEBAQEAAAAAAAAAAAAAAAAABAUD/8QAIBEBAAEDBAMBAAAAAAAAAAAAAAECAxEEEnHBIVFhIv/aAAwDAQACEQMRAD8AvFERBAY1227D1DUVcDGPMRaLOvaxeBfL3Ubu7xc/FjK19RHEwU7msBZfO4N9f5zWtvEqHVbTRMLQx4u+418hr4ZFROBHHYckcUXZEc5s9trZ6A6q+ixTOmmcfrpNN3F3GfC0ERFApEREBERBweOafgzMld+Motf1GRHRRmwYO+1FOyHzDj7A3J+F6719qkPo6WHtAtBnceYA6/CgcGbaNDtCldLxHNqPsH0uRY87c1sWrdydNvj0zK7lMajYuhERY7TEREBERBx+NHMjkg7wKc8QEDimzdCfEELVoYYopqNkbKIPks68I0Guo/VY3l0ktQKVtLFLM2b6bMBNng3bcjQG5FzlkofBfHqaswNpTAaEsZNK4kmzTk0E6g5qiLdc0ZifHPTjO3f94WmiIp3YREQEREGECIgyiIgIiIP/2Q==",
     "id": "009",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Agua 750ml",
@@ -122,7 +131,8 @@
     "priceExtra": null,
     "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHDgkOBxEKEBALFxYPFxEUGRsaHRoWIBEiIiAdHx8kKDQsGh4xJx8fLTEkMSo3OjouGSszRDMtNzQvLisBCgoKDQ0NGg8NGjcaHyU3Nzc3Nzc3Nzc3Kzc3OC03MDc4Nys3Nzc3LSszMDAtKy03OCs3Lzc3LSs3MystNysrOP/AABEIADIAMgMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAABQcBBAYD/8QALRAAAQMCAwUHBQAAAAAAAAAAAQACAwQRBiExBQcTkbESFEFRYXGhIiMyQoH/xAAXAQEBAQEAAAAAAAAAAAAAAAAABAUD/8QAIBEBAAEDBAMBAAAAAAAAAAAAAAECAxEEEnHBIVFhIv/aAAwDAQACEQMRAD8AvFERBAY1227D1DUVcDGPMRaLOvaxeBfL3Ubu7xc/FjK19RHEwU7msBZfO4N9f5zWtvEqHVbTRMLQx4u+418hr4ZFROBHHYckcUXZEc5s9trZ6A6q+ixTOmmcfrpNN3F3GfC0ERFApEREBERBweOafgzMld+Motf1GRHRRmwYO+1FOyHzDj7A3J+F6719qkPo6WHtAtBnceYA6/CgcGbaNDtCldLxHNqPsH0uRY87c1sWrdydNvj0zK7lMajYuhERY7TEREBERBx+NHMjkg7wKc8QEDimzdCfEELVoYYopqNkbKIPks68I0Guo/VY3l0ktQKVtLFLM2b6bMBNng3bcjQG5FzlkofBfHqaswNpTAaEsZNK4kmzTk0E6g5qiLdc0ZifHPTjO3f94WmiIp3YREQEREGECIgyiIgIiIP/2Q==",
     "id": "010",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Gaseosa 500ml",
@@ -133,7 +143,8 @@
     "priceExtra": null,
     "image": "https://cdn.shoplightspeed.com/shops/604817/files/882430/coca-cola-usa-coke-24-12oz-case.jpg",
     "id": "011",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   },
   {
     "name": "Gaseosa 750ml",
@@ -144,6 +155,7 @@
     "priceExtra": null,
     "image": "https://cdn.shoplightspeed.com/shops/604817/files/882430/coca-cola-usa-coke-24-12oz-case.jpg",
     "id": "012",
-    "selectedOption": null
+    "selectedOption": null,
+    "turn": "almuerzo"
   }
 ]
