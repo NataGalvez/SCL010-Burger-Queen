@@ -1,1 +1,10 @@
-<p>item-cards works!</p>
+<p>Natalia debes poner aquí el json de productos.</p>
+<ul>
+  <li *ngFor="let product of products">
+    <img src="{{product.image}}" alt="">
+    <br>
+    <span>{{product.name}}</span>
+    <br>
+    <span> ${{product.price}}</span>
+  </li>
+</ul>

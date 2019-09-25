@@ -1,0 +1,15 @@
+.tablesBtn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tableBtn {
+  padding-bottom: 40px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+
+}
