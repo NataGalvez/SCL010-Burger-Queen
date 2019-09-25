@@ -1,10 +1,22 @@
-<p>Natalia debes poner aquí el json de productos.</p>
-<ul>
-  <li *ngFor="let product of products">
-    <img src="{{product.image}}" alt="">
-    <br>
-    <span>{{product.name}}</span>
-    <br>
-    <span> ${{product.price}}</span>
+<ul class="groupItems">
+  <li class="itemCard" *ngFor="let product of products">
+    <img class="itemImg" src="{{ product.image }}" alt="" />
+    <br />
+    <div class="itemSelectPrice">
+      <select name="itemSelect" id="itemSelect">
+        <option
+          *ngFor="let option of product.options"
+          ng:repeat="option"
+          label=""
+          value="-"
+          >{{ option }}
+        </option>
+      </select>
+      <h3>${{ product.price }}</h3>
+    </div>
+    <h1>{{ product.name }}</h1>
+    <h2>{{ product.description }}</h2>
+    <br />
+    <button class="orangeBtn">+ Añadir al pedido</button>
   </li>
 </ul>

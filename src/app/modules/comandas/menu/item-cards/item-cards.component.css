@@ -1,0 +1,20 @@
+.groupItems {
+  display: flex;
+  flex-wrap: wrap;
+}
+.itemCard {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.itemImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 4px;
+  max-width: 263px;
+}
+.itemSelectPrice {
+  display: flex;
+}

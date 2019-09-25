@@ -1,4 +1,6 @@
 import { Component, OnInit } from "@angular/core";
+
+import productosAlmuerzo from "../../../../models/productos-almuerzo.json";
 import productos from "../../../../models/productos.json";
 @Component({
   selector: "app-item-cards",
@@ -7,6 +9,8 @@ import productos from "../../../../models/productos.json";
 })
 export class ItemCardsComponent implements OnInit {
   products = productos;
+
+  productsLunch = productosAlmuerzo;
   constructor() {}
 
   ngOnInit() {}

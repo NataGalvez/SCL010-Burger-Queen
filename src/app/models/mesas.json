@@ -58,5 +58,17 @@
     "name": "Mesa 10",
     "cliente": null,
     "ordenes": []
+  },
+  {
+    "tableNumber": 11,
+    "name": "Mesa 11",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "tableNumber": 12,
+    "name": "Mesa 12",
+    "cliente": null,
+    "ordenes": []
   }
 ]
