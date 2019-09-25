@@ -5,6 +5,11 @@
   font-family: "Source Sans Pro", sans-serif;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .blueBtn {
   width: 276px;
   height: 71px;
@@ -23,6 +28,9 @@
   color: white;
   font-weight: bold;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button {

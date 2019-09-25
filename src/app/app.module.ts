@@ -6,6 +6,12 @@ import { AppComponent } from "./app.component";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
 
+import { registerLocaleData } from "@angular/common";
+import localeEs from "@angular/common/locales/es";
+import localeEsExtra from "@angular/common/locales/extra/es-419";
+
+registerLocaleData(localeEs, "es-419", localeEsExtra);
+
 @NgModule({
   declarations: [AppComponent],
   imports: [

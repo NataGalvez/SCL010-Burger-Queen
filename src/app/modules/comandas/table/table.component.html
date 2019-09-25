@@ -1,15 +1,10 @@
 <h1>Elegir Mesa:</h1>
 <div class="tablesBtn">
-  <a class="tableBtn" [routerLink]="'/tables/1//menu/desayuno'"> <button class="orangeBtn">Mesa 1</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/2//menu/desayuno'"> <button class="orangeBtn">Mesa 2</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/3//menu/desayuno'"> <button class="orangeBtn">Mesa 3</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/4//menu/desayuno'"> <button class="orangeBtn">Mesa 4</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/5//menu/desayuno'"> <button class="orangeBtn">Mesa 5</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/6//menu/desayuno'"> <button class="orangeBtn">Mesa 6</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/7//menu/desayuno'"> <button class="orangeBtn">Mesa 7</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/8//menu/desayuno'"> <button class="orangeBtn">Mesa 8</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/9//menu/desayuno'"> <button class="orangeBtn">Mesa 9</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/10//menu/desayuno'"> <button class="orangeBtn">Mesa 10</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/11//menu/desayuno'"> <button class="orangeBtn">Mesa 11</button></a>
-  <a class="tableBtn" [routerLink]="'/tables/12//menu/desayuno'"> <button class="orangeBtn">Mesa 12</button></a>
+  <a
+    class="tableBtn"
+    [routerLink]="['/tables', table.tableNumber, 'menu', type]"
+    *ngFor="let table of tables"
+  >
+    <div class="orangeBtn">{{ table.name }}</div>
+  </a>
 </div>
