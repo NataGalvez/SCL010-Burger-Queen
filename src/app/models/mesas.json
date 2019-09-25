@@ -1,5 +1,4 @@
-[
-  {
+[{
     "tableNumber": 1,
     "name": "Mesa 1",
     "cliente": null,
@@ -56,6 +55,18 @@
   {
     "tableNumber": 10,
     "name": "Mesa 10",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "tableNumber": 11,
+    "name": "Mesa 11",
+    "cliente": null,
+    "ordenes": []
+  },
+  {
+    "tableNumber": 12,
+    "name": "Mesa 12",
     "cliente": null,
     "ordenes": []
   }
