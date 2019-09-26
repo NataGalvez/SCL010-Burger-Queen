@@ -1,13 +1,16 @@
 import { Component, OnInit } from "@angular/core";
-import productos from "../../../../models/productos.json";
+import { CocinaService } from "src/app/services/cocina.service";
+
 @Component({
   selector: "app-item-cards",
   templateUrl: "./item-cards.component.html",
   styleUrls: ["./item-cards.component.css"]
 })
 export class ItemCardsComponent implements OnInit {
-  products = productos;
-  constructor() {}
+  products: any[];
+  constructor(private cocinaService: CocinaService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.products = this.cocinaService.getProducts();
+  }
 }

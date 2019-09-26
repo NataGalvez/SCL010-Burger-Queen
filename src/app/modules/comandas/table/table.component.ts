@@ -1,19 +1,20 @@
 import { Component, OnInit } from "@angular/core";
-import mesas from "../../../models/mesas.json";
+import { MesasService } from "../../../services/mesas.service";
 @Component({
   selector: "app-table",
   templateUrl: "./table.component.html",
   styleUrls: ["./table.component.css"]
 })
 export class TableComponent implements OnInit {
-  tables = mesas;
+  tables: any[];
   type: string;
   time: Date;
-  constructor() {
+  constructor(private mesasService: MesasService) {
     this.time = new Date();
   }
 
   ngOnInit() {
+    this.tables = this.mesasService.getTables();
     if (this.time.getHours() >= 6 && this.time.getHours() <= 12) {
       this.type = "desayuno";
     } else {

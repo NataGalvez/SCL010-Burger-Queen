@@ -1,9 +1,12 @@
-import { Injectable } from '@angular/core';
-
+import { Injectable } from "@angular/core";
+import productos from "../models/productos.json";
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root"
 })
 export class CocinaService {
-
-  constructor() { }
+  private products: any[] = productos;
+  constructor() {}
+  getProducts() {
+    return this.products;
+  }
 }
