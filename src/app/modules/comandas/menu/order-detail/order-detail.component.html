@@ -2,8 +2,8 @@
   <h1 class="text-order-title">Detalle de la orden:</h1>
   <hr class="order-separator" />
 </div>
-<div>
-  <h2>Item</h2>
-  <h2>Cantidad</h2>
-  <h2>Precio</h2>
+<div *ngFor="let detail of orderMesa">
+  <h2>Item:{{detail.name}}</h2>
+  <h2>Cantidad: {{detail.quantity}}</h2>
+  <h2>Precio: {{detail.price}}</h2>
 </div>
