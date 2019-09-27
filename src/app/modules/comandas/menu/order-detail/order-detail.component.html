@@ -5,5 +5,5 @@
 <div *ngFor="let detail of orderMesa">
   <h2>Item:{{detail.name}}</h2>
   <h2>Cantidad: {{detail.quantity}}</h2>
-  <h2>Precio: {{detail.price}}</h2>
+  <h2>Precio: {{detail.price * detail.quantity}}</h2>
 </div>

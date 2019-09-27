@@ -26,6 +26,5 @@ export class ItemCardsComponent implements OnInit {
   }
   addProducts(product) {
     this.mesasService.addProductToOrder(this.tableNumber, product);
-    console.log(this.tableNumber);
   }
 }
