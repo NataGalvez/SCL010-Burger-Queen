@@ -17,6 +17,8 @@
     <h1>{{ product.name }}</h1>
     <h2>{{ product.description }}</h2>
     <br />
-    <button class="orangeBtn">+ Añadir al pedido</button>
+    <button (click)="addProducts(product)" class="orangeBtn">
+      + Añadir al pedido
+    </button>
   </li>
 </ul>
