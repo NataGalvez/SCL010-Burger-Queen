@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --blue: rgba(1, 169, 244, 0.84);
+  --orange: #ff8246;
+  --lightBlue: rgba(1, 169, 244, 0.43);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h1,
+li,
+ul,
+h2 {
+  font-style: normal;
+  color: #555454;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  display: inherit;
+}
+
+nav ul {
+  list-style: none;
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.blueBtn {
+  width: 276px;
+  height: 71px;
+  border-radius: 8px;
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.orangeBtn {
+  width: 276px;
+  height: 71px;
+  border-radius: 8px;
+  background-color: var(--orange);
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  border: 0px;
+}

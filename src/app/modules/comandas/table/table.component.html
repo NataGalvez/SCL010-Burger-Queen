@@ -1,4 +1,10 @@
-<p>table works!</p>
-<h1>mesas</h1>
-<button>mesa1</button>
-<button>mesa2</button>
+<h1>Elegir Mesa:</h1>
+<div class="tablesBtn">
+  <a
+    class="tableBtn"
+    [routerLink]="['/tables', table.tableNumber, 'menu', type]"
+    *ngFor="let table of tables"
+  >
+    <div class="orangeBtn">{{ table.name }}</div>
+  </a>
+</div>

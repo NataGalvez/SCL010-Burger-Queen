@@ -1,0 +1,15 @@
+.order-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+}
+.text-order-title {
+  font-size: 18px;
+}
+.order-separator {
+  background-color: #d6d6d6;
+  border: 0;
+  flex-grow: 1;
+  height: 1px;
+}
