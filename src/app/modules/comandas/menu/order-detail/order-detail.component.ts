@@ -10,6 +10,7 @@ import { MesasService } from "src/app/services/mesas.service";
 export class OrderDetailComponent implements OnInit {
   tableNumber: number;
   orderMesa: any[];
+
   constructor(
     private route: ActivatedRoute,
     private mesasService: MesasService
@@ -20,5 +21,8 @@ export class OrderDetailComponent implements OnInit {
       this.tableNumber = +params.tableNumber;
     });
     this.orderMesa = this.mesasService.getOrderFromTables(this.tableNumber);
+  }
+  removeProducts(product) {
+    this.mesasService.removeProductFromOrder(this.tableNumber, product);
   }
 }

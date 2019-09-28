@@ -1,3 +1,5 @@
-<label for="nameClient">Cliente
-  <input type="text" placeholder="Nombre Cliente">
+<label>
+  Cliente:
+  <input type="text" placeholder="Nombre Cliente" [formControl]="name" />
 </label>
+<img src="../../../../../assets/done-24px.svg" (click)="client()" />

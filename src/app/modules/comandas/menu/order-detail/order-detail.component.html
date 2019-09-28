@@ -4,6 +4,10 @@
 </div>
 <div *ngFor="let detail of orderMesa">
   <h2>Item:{{ detail.name }}</h2>
+  <img
+    src="../../../../../assets/remove_circle_outline-24px.svg"
+    (click)="removeProducts(detail)"
+  />
   <h2>Cantidad: {{ detail.quantity }}</h2>
   <h2>Precio: {{ detail.price * detail.quantity }}</h2>
 </div>

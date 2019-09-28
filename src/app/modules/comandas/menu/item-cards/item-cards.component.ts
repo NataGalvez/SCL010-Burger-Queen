@@ -3,10 +3,6 @@ import { CocinaService } from "src/app/services/cocina.service";
 import { ActivatedRoute } from "@angular/router";
 import { MesasService } from "src/app/services/mesas.service";
 
-import productosAlmuerzo from "../../../../models/productos-almuerzo.json";
-import productos from "../../../../models/productos.json";
-import mesas from "../../../../models/mesas.json";
-import { analyzeAndValidateNgModules } from "@angular/compiler";
 @Component({
   selector: "app-item-cards",
   templateUrl: "./item-cards.component.html",

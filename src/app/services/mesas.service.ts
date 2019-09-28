@@ -21,6 +21,24 @@ export class MesasService {
       }
     });
   }
+  // Remueve los productos a la orden en el número de mesa correspondiente
+  removeProductFromOrder(tableNumber, product): any {
+    this.tables.forEach(table => {
+      if (table.tableNumber === tableNumber) {
+        console.log(table);
+
+        table.orders.forEach((order, index) => {
+          if (order.name === product.name) {
+            if (order.quantity > 1) {
+              this.subtractQuantity(product.name);
+            } else {
+              table.orders.splice(index, 1);
+            }
+          }
+        });
+      }
+    });
+  }
 
   private checkIfProductExists(table, productName): boolean {
     let output = false;
@@ -41,7 +59,15 @@ export class MesasService {
     });
     return output;
   }
-  getQuantity(selectedProduct) {
+
+  private subtractQuantity(selectedProduct) {
+    this.products.forEach(product => {
+      if (product.name === selectedProduct) {
+        product.quantity--;
+      }
+    });
+  }
+  private getQuantity(selectedProduct) {
     this.products.forEach(product => {
       if (product.name === selectedProduct) {
         product.quantity++;
@@ -51,5 +77,14 @@ export class MesasService {
 
   getTables() {
     return this.tables;
+  }
+
+  saveClient(name, tableNumber) {
+    this.tables.forEach(table => {
+      if (table.tableNumber === tableNumber) {
+        table.client = name;
+        console.log(table);
+      }
+    });
   }
 }
