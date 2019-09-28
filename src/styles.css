@@ -2,7 +2,12 @@
   --blue: rgba(1, 169, 244, 0.84);
   --orange: #ff8246;
   --lightBlue: rgba(1, 169, 244, 0.43);
+  --darkGray: #717171;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 h1,

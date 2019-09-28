@@ -2,11 +2,12 @@
   display: flex;
   align-items: center;
   position: relative;
+  margin: 20px 0;
 }
 
 .clientName {
   border: solid 1px var(--blue);
-  width: calc(100% - 28px);
+  width: 1100%;
   border-radius: 4px;
   background-color: #ffffff;
   padding: 9px;
