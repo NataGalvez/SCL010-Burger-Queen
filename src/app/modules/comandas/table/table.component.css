@@ -1,16 +1,22 @@
 .tablesBtn {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 80px;
   align-items: center;
-  min-height: calc(100vh - 162px);
 }
 
 .tableBtn {
   padding-bottom: 40px;
 }
 
-h1 {
+.table h1 {
   font-size: 20px;
+  color: #555544;
   font-weight: bold;
+  margin: 20px 0;
+  padding: 0 80px;
+}
+.table {
+  min-height: calc(100vh - 204px);
 }
