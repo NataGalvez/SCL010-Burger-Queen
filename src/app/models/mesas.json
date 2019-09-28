@@ -3,72 +3,132 @@
     "tableNumber": 1,
     "name": "Mesa 1",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 2,
     "name": "Mesa 2",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 3,
     "name": "Mesa 3",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 4,
     "name": "Mesa 4",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 5,
     "name": "Mesa 5",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 6,
     "name": "Mesa 6",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 7,
     "name": "Mesa 7",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 8,
     "name": "Mesa 8",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 9,
     "name": "Mesa 9",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 10,
     "name": "Mesa 10",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 11,
     "name": "Mesa 11",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   },
   {
     "tableNumber": 12,
     "name": "Mesa 12",
     "client": null,
-    "orders": []
+    "orders": [],
+    "date": null,
+    "sent": true,
+    "doing": false,
+    "ready": false,
+    "delivered": false
   }
 ]

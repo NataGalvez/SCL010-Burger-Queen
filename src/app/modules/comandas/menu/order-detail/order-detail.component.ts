@@ -25,4 +25,7 @@ export class OrderDetailComponent implements OnInit {
   removeProducts(product) {
     this.mesasService.removeProductFromOrder(this.tableNumber, product);
   }
+  addProducts(product) {
+    this.mesasService.addProductToOrder(this.tableNumber, product);
+  }
 }

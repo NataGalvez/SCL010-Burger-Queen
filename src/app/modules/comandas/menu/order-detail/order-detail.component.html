@@ -8,6 +8,10 @@
     src="../../../../../assets/remove_circle_outline-24px.svg"
     (click)="removeProducts(detail)"
   />
-  <h2>Cantidad: {{ detail.quantity }}</h2>
+  <h2>{{ detail.quantity }}</h2>
+  <img
+    src="../../../../../assets/add_circle_outline-24px.svg"
+    (click)="addProducts(detail)"
+  />
   <h2>Precio: {{ detail.price * detail.quantity }}</h2>
 </div>
