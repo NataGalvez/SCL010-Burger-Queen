@@ -12,6 +12,7 @@ import { ClientDetailComponent } from "./menu/client-detail/client-detail.compon
 import { OrderDetailComponent } from "./menu/order-detail/order-detail.component";
 import { OrderComponent } from "./menu/order/order.component";
 import { OrderTotalComponent } from "./menu/order-total/order-total.component";
+import { ReusableModule } from "../reusable/reusable.module";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { OrderTotalComponent } from "./menu/order-total/order-total.component";
     CommonModule,
     ComandasRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ReusableModule
   ]
 })
 export class ComandasModule {}

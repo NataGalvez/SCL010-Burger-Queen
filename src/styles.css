@@ -55,3 +55,6 @@ a {
 button {
   border: 0px;
 }
+input {
+  vertical-align: middle;
+}

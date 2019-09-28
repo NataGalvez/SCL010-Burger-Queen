@@ -12,6 +12,8 @@ export class ClientDetailComponent implements OnInit {
   name = new FormControl("");
   tableNumber: number;
   tables: any[];
+  isEditable: boolean = true;
+
   constructor(
     private mesasService: MesasService,
     private route: ActivatedRoute
@@ -23,7 +25,13 @@ export class ClientDetailComponent implements OnInit {
       this.tableNumber = +params.tableNumber;
     });
   }
+
   client() {
     this.mesasService.saveClient(this.name.value, this.tableNumber);
+    this.isEditable = false;
+  }
+
+  makeEditable() {
+    this.isEditable = true;
   }
 }

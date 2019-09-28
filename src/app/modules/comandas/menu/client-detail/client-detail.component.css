@@ -1,0 +1,17 @@
+.clientDetail {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.clientName {
+  border: solid 1px var(--blue);
+  width: calc(100% - 28px);
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 9px;
+}
+.iconClientDetail {
+  position: absolute;
+  right: 16px;
+}

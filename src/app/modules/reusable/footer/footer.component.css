@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  background-color: var(--blue);
+  justify-content: space-around;
+  align-items: center;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright p {
+  color: white;
+  padding-left: 12px;
+}
+
+.rrss {
+  display: flex;
+  align-items: center;
+}
+
+.instagram {
+  padding-left: 20px;
+}
