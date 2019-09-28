@@ -35,8 +35,8 @@ a {
 }
 
 .blueBtn {
-  width: 276px;
-  height: 71px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   background-color: var(--blue);
   color: white;
