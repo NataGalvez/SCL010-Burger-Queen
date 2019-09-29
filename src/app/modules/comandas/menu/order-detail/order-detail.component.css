@@ -3,6 +3,7 @@
   flex-direction: row;
   text-align: center;
   align-items: center;
+  margin-bottom: 25px;
 }
 .text-order-title {
   font-size: 18px;
@@ -12,4 +13,28 @@
   border: 0;
   flex-grow: 1;
   height: 1px;
+}
+.order-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.remove-img {
+  margin-right: 5px;
+}
+.add-img {
+  margin-left: 5px;
+}
+
+.order-detail h2 {
+  color: #7d7d7d;
+  font-size: 18px;
+}
+.add-and-remove {
+  display: flex;
+}
+
+.total-detail {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
 }

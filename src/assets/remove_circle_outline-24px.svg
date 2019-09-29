@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M7 11v2h10v-2H7zm5-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" id="remove_circle_outline-24px" width="25" height="25" viewBox="0 0 25 25">
+    <defs>
+        <style>
+            .cls-1{fill:none}.cls-2{fill:#7d7d7d}
+        </style>
+    </defs>
+    <path id="Trazado_7" d="M0 0h25v25H0z" class="cls-1" data-name="Trazado 7"/>
+    <path id="Trazado_8" d="M7.25 11.45v2.1h10.5v-2.1zM12.5 2A10.5 10.5 0 1 0 23 12.5 10.5 10.5 0 0 0 12.5 2zm0 18.9a8.4 8.4 0 1 1 8.4-8.4 8.411 8.411 0 0 1-8.4 8.4z" class="cls-2" data-name="Trazado 8"/>
+</svg>

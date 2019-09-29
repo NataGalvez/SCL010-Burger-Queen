@@ -76,3 +76,16 @@ input {
   justify-content: center;
   align-items: center;
 }
+
+h3 {
+  font-size: 13px;
+  color: var(--darkGray);
+  font-weight: normal;
+  margin: 0;
+}
+h4 {
+  font-size: 13px;
+  color: var(--blue);
+  font-weight: bold;
+  margin: 0;
+}
