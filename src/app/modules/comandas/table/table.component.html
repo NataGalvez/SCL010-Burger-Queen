@@ -1,10 +1,14 @@
-<h1>Elegir Mesa:</h1>
-<div class="tablesBtn">
-  <a
-    class="tableBtn"
-    [routerLink]="['/tables', table.tableNumber, 'menu', type]"
-    *ngFor="let table of tables"
-  >
-    <div class="orangeBtn">{{ table.name }}</div>
-  </a>
+<app-header></app-header>
+<div class="table">
+  <h1>Elegir Mesa:</h1>
+  <div class="tablesBtn">
+    <a
+      class="tableBtn"
+      [routerLink]="['/tables', table.tableNumber, 'menu', type]"
+      *ngFor="let table of tables"
+    >
+      <div class="orangeBtn">{{ table.name }}</div>
+    </a>
+  </div>
 </div>
+<app-footer></app-footer>

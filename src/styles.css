@@ -2,7 +2,12 @@
   --blue: rgba(1, 169, 244, 0.84);
   --orange: #ff8246;
   --lightBlue: rgba(1, 169, 244, 0.43);
+  --darkGray: #717171;
   font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  margin: 0;
 }
 
 h1,
@@ -20,20 +25,18 @@ h2 {
   background: transparent;
   display: inherit;
 }
-
 nav ul {
   list-style: none;
   list-style-type: none;
 }
-
 a {
   color: inherit;
   text-decoration: inherit;
 }
 
 .blueBtn {
-  width: 276px;
-  height: 71px;
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   background-color: var(--blue);
   color: white;
@@ -56,4 +59,34 @@ a {
 
 button {
   border: 0px;
+}
+input {
+  vertical-align: middle;
+}
+
+.orangeBtnMenu {
+  width: 251px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: var(--orange);
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 13px;
+  color: var(--darkGray);
+  font-weight: normal;
+  margin: 0;
+}
+h4 {
+  font-size: 13px;
+  color: var(--blue);
+  font-weight: bold;
+  margin: 0;
 }

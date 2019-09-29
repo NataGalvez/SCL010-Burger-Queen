@@ -1,0 +1,6 @@
+.comandas {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 0 80px;
+  gap: 16px;
+}

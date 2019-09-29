@@ -1,1 +1,15 @@
+.menuOption {
+  display: flex;
+}
 
+.blueBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 60px;
+  max-width: cal(50% - 8px);
+}
+
+.blueBtn:first-child {
+  margin-right: 16px;
+}

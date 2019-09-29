@@ -1,10 +1,13 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
+import { AngularFireModule } from "@angular/fire";
+import { AngularFirestoreModule } from "@angular/fire/firestore";
 
 import { registerLocaleData } from "@angular/common";
 import localeEs from "@angular/common/locales/es";
@@ -17,6 +20,11 @@ registerLocaleData(localeEs, "es-419", localeEsExtra);
   imports: [
     BrowserModule,
     AppRoutingModule,
+    AngularFireModule,
+    AngularFirestoreModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebase),
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: environment.production
     })

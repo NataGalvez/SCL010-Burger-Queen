@@ -1,0 +1,15 @@
+.order-total {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.order-total h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.order-total-btn {
+  display: flex;
+  justify-content: center;
+}
