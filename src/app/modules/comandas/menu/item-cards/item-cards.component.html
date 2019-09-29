@@ -1,14 +1,10 @@
-<ul class="group-items">
-  <li class="item-card" *ngFor="let product of products">
+<div class="group-items">
+  <div class="item-card" *ngFor="let product of products">
     <div class="img-select">
       <img class="item-img" src="{{ product.image }}" alt="" />
       <div class="item-select-price">
         <select class="item-select" name="itemSelect" id="itemSelect">
-          <option
-            *ngFor="let option of product.options"
-            ng:repeat="option"
-            label=""
-            value="-"
+          <option *ngFor="let option of product.options" [value]="option"
             >{{ option }}
           </option>
         </select>
@@ -19,8 +15,8 @@
     <h2>{{ product.name }}</h2>
     <h3>{{ product.description }}</h3>
     <br />
-    <button (click)="addProducts(product)" class="orangeBtn">
+    <button (click)="addProducts(product)" class="orangeBtnMenu">
       + Añadir al pedido
     </button>
-  </li>
-</ul>
+  </div>
+</div>
