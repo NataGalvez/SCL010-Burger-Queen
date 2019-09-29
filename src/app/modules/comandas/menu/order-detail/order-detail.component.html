@@ -1,0 +1,28 @@
+<div class="order-title">
+  <h1 class="text-order-title">Detalle de la orden:</h1>
+  <hr class="order-separator" />
+</div>
+<div *ngFor="let detail of orderMesa">
+  <div class="order-detail">
+    <h2>{{ detail.name }}</h2>
+    <div class="add-and-remove">
+      <img
+        class="remove-img"
+        src="../../../../../assets/remove_circle_outline-24px.svg"
+        (click)="removeProducts(detail)"
+      />
+      <h2>{{ detail.quantity }}</h2>
+      <img
+        class="add-img"
+        src="../../../../../assets/add_circle_outline-24px.svg"
+        (click)="addProducts(detail)"
+      />
+    </div>
+  </div>
+  <h3>{{ detail.description }}</h3>
+  <div class="total-detail">
+    <h3>Total:</h3>
+    <h4>${{ detail.price * detail.quantity }}</h4>
+  </div>
+  <hr />
+</div>

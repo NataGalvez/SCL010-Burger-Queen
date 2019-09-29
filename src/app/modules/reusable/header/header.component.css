@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+.menu-list li {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555454;
+  padding-left: 30px;
+  position: relative;
+  z-index: 9;
+}
+
+.menu-list a.active::before {
+  content: "";
+  width: 60%;
+  right: -10px;
+  height: 14px;
+  bottom: -5px;
+  background-color: #91dafa;
+  position: absolute;
+  z-index: -1;
+}

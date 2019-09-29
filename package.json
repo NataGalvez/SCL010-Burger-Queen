@@ -3,11 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
+  },
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.9.0"
   },
   "private": true,
   "dependencies": {
@@ -15,10 +20,16 @@
     "@angular/common": "~8.2.5",
     "@angular/compiler": "~8.2.5",
     "@angular/core": "~8.2.5",
+    "@angular/fire": "^5.2.1",
     "@angular/forms": "~8.2.5",
     "@angular/platform-browser": "~8.2.5",
     "@angular/platform-browser-dynamic": "~8.2.5",
+    "@angular/pwa": "^0.803.4",
     "@angular/router": "~8.2.5",
+    "@angular/service-worker": "~8.2.5",
+    "express": "^4.17.1",
+    "firebase": "^7.0.0",
+    "path": "^0.12.7",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

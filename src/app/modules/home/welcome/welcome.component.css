@@ -1,0 +1,16 @@
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: center;
+  min-height: calc(100vh - 182px);
+}
+
+.orangeBtn {
+  width: 350px;
+  height: 90px;
+}
+
+.orangeBtn img {
+  margin-right: 70px;
+}
