@@ -9,7 +9,7 @@ import { MesasService } from "src/app/services/mesas.service";
 })
 export class OrderTotalComponent implements OnInit {
   tableNumber: number;
-  mesa: any[];
+  mesa: any;
   totalOrder: number;
 
   constructor(
