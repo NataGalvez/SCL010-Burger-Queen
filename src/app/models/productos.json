@@ -11,7 +11,8 @@
     "selectedOption": null,
     "turn": "desayuno",
     "description": "Delicioso café Americano recién hecho",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   },
   {
     "name": "Café con leche",
@@ -25,13 +26,14 @@
     "selectedOption": null,
     "turn": "desayuno",
     "description": "Delicioso expresso con leche",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   },
   {
     "name": "Jugo natural",
     "price": 700,
-    "haveOptions": false,
-    "options": ["Regular"],
+    "haveOptions": true,
+    "options": ["Frutilla", "Maracuyá", "Limón", "Naranja", "Mango", "Mora"],
     "extras": [],
     "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1551718727-b591f6d8fbee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1048&q=80",
@@ -39,7 +41,8 @@
     "selectedOption": null,
     "turn": "desayuno",
     "description": "Refrescantes jugos de diferentes sabores",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   },
   {
     "name": "Sandwich de jamón y queso",
@@ -48,12 +51,13 @@
     "options": ["Frica", "Molde"],
     "extras": [],
     "priceExtra": null,
-    "image": "http://www.starbucks.com.pe/media/croissant-mixto-sandwiches_tcm92-18707_w1024_n.png",
+    "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80",
     "id": "004",
     "selectedOption": null,
     "turn": "desayuno",
     "description": "Rico pan tostado  de jamón y queso",
-    "quantity": null
+    "quantity": null,
+    "category": "comida"
   },
   {
     "name": "Hamburguesa simple",
@@ -71,12 +75,13 @@
       }
     ],
     "priceExtra": 500,
-    "image": "https://fastly.4sqi.net/img/general/128x128/13385944_qB0tgxrXtmy0KQx9gCfAiYwqPiVNT0SYj1rAPG413Jw.jpg",
+    "image": "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80",
     "id": "005",
     "selectedOption": null,
     "turn": "almuerzo",
-    "description": "Exquisita hamburguesa, palta, tomate",
-    "quantity": null
+    "description": "Hamburguesa simple con: palta, tomate y lechuga",
+    "quantity": null,
+    "category": "comida"
   },
   {
     "name": "Hamburguesa doble",
@@ -94,12 +99,13 @@
       }
     ],
     "priceExtra": 500,
-    "image": "https://fastly.4sqi.net/img/general/128x128/13385944_qB0tgxrXtmy0KQx9gCfAiYwqPiVNT0SYj1rAPG413Jw.jpg",
+    "image": "https://images.unsplash.com/photo-1477617722074-45613a51bf6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "006",
     "selectedOption": null,
     "turn": "almuerzo",
-    "description": "Gigante y deliciosa hamburguesa doble, palta, tomate",
-    "quantity": null
+    "description": "Gigante y deliciosa hamburguesa doble con: palta, tomate y lechuga",
+    "quantity": null,
+    "category": "comida"
   },
   {
     "name": "Papas fritas",
@@ -108,12 +114,13 @@
     "options": ["Medianas"],
     "extras": [],
     "priceExtra": null,
-    "image": "https://www.masmasa.cl/wp-content/uploads/2018/01/Papas-Fritas-Steak-House-128x128.jpg",
+    "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "id": "007",
     "selectedOption": null,
     "turn": "almuerzo",
     "description": "Crujientes y sabrosas papas de la casa",
-    "quantity": null
+    "quantity": null,
+    "category": "comida"
   },
   {
     "name": "Onion Rings",
@@ -122,12 +129,13 @@
     "options": ["Medianas"],
     "extras": [],
     "priceExtra": null,
-    "image": "https://fastly.4sqi.net/img/general/128x128/10995737_B8ScITJ_x3qxeDBQhxSrMy2eSrp3oQs5rgID03JWZCs.jpg",
+    "image": "https://i.ytimg.com/vi/dcB5VU93AII/maxresdefault.jpg",
     "id": "008",
     "selectedOption": null,
     "turn": "almuerzo",
     "description": "Sabrosos aritos de cebolla",
-    "quantity": null
+    "quantity": null,
+    "category": "comida"
   },
   {
     "name": "Agua 500ml",
@@ -136,12 +144,13 @@
     "options": ["con gas", "sin gas"],
     "extras": [],
     "priceExtra": null,
-    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHDgkOBxEKEBALFxYPFxEUGRsaHRoWIBEiIiAdHx8kKDQsGh4xJx8fLTEkMSo3OjouGSszRDMtNzQvLisBCgoKDQ0NGg8NGjcaHyU3Nzc3Nzc3Nzc3Kzc3OC03MDc4Nys3Nzc3LSszMDAtKy03OCs3Lzc3LSs3MystNysrOP/AABEIADIAMgMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAABQcBBAYD/8QALRAAAQMCAwUHBQAAAAAAAAAAAQACAwQRBiExBQcTkbESFEFRYXGhIiMyQoH/xAAXAQEBAQEAAAAAAAAAAAAAAAAABAUD/8QAIBEBAAEDBAMBAAAAAAAAAAAAAAECAxEEEnHBIVFhIv/aAAwDAQACEQMRAD8AvFERBAY1227D1DUVcDGPMRaLOvaxeBfL3Ubu7xc/FjK19RHEwU7msBZfO4N9f5zWtvEqHVbTRMLQx4u+418hr4ZFROBHHYckcUXZEc5s9trZ6A6q+ixTOmmcfrpNN3F3GfC0ERFApEREBERBweOafgzMld+Motf1GRHRRmwYO+1FOyHzDj7A3J+F6719qkPo6WHtAtBnceYA6/CgcGbaNDtCldLxHNqPsH0uRY87c1sWrdydNvj0zK7lMajYuhERY7TEREBERBx+NHMjkg7wKc8QEDimzdCfEELVoYYopqNkbKIPks68I0Guo/VY3l0ktQKVtLFLM2b6bMBNng3bcjQG5FzlkofBfHqaswNpTAaEsZNK4kmzTk0E6g5qiLdc0ZifHPTjO3f94WmiIp3YREQEREGECIgyiIgIiIP/2Q==",
+    "image": "https://images.unsplash.com/photo-1550505095-81378a674395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "009",
     "selectedOption": null,
     "turn": "almuerzo",
     "description": "Benedictino",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   },
   {
     "name": "Agua 750ml",
@@ -150,12 +159,13 @@
     "options": ["con gas", "sin gas"],
     "extras": [],
     "priceExtra": null,
-    "image": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMHDgkOBxEKEBALFxYPFxEUGRsaHRoWIBEiIiAdHx8kKDQsGh4xJx8fLTEkMSo3OjouGSszRDMtNzQvLisBCgoKDQ0NGg8NGjcaHyU3Nzc3Nzc3Nzc3Kzc3OC03MDc4Nys3Nzc3LSszMDAtKy03OCs3Lzc3LSs3MystNysrOP/AABEIADIAMgMBIgACEQEDEQH/xAAaAAEAAgMBAAAAAAAAAAAAAAAABQcBBAYD/8QALRAAAQMCAwUHBQAAAAAAAAAAAQACAwQRBiExBQcTkbESFEFRYXGhIiMyQoH/xAAXAQEBAQEAAAAAAAAAAAAAAAAABAUD/8QAIBEBAAEDBAMBAAAAAAAAAAAAAAECAxEEEnHBIVFhIv/aAAwDAQACEQMRAD8AvFERBAY1227D1DUVcDGPMRaLOvaxeBfL3Ubu7xc/FjK19RHEwU7msBZfO4N9f5zWtvEqHVbTRMLQx4u+418hr4ZFROBHHYckcUXZEc5s9trZ6A6q+ixTOmmcfrpNN3F3GfC0ERFApEREBERBweOafgzMld+Motf1GRHRRmwYO+1FOyHzDj7A3J+F6719qkPo6WHtAtBnceYA6/CgcGbaNDtCldLxHNqPsH0uRY87c1sWrdydNvj0zK7lMajYuhERY7TEREBERBx+NHMjkg7wKc8QEDimzdCfEELVoYYopqNkbKIPks68I0Guo/VY3l0ktQKVtLFLM2b6bMBNng3bcjQG5FzlkofBfHqaswNpTAaEsZNK4kmzTk0E6g5qiLdc0ZifHPTjO3f94WmiIp3YREQEREGECIgyiIgIiIP/2Q==",
+    "image": "https://images.unsplash.com/photo-1550505095-81378a674395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "010",
     "selectedOption": null,
     "turn": "almuerzo",
     "description": "Benedictino",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   },
   {
     "name": "Gaseosa 500ml",
@@ -164,12 +174,13 @@
     "options": ["coca cola", "fanta", "sprite", "canada dry"],
     "extras": [],
     "priceExtra": null,
-    "image": "https://cdn.shoplightspeed.com/shops/604817/files/882430/coca-cola-usa-coke-24-12oz-case.jpg",
+    "image": "https://images.unsplash.com/photo-1517088587697-8de5e72b421b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80",
     "id": "011",
     "selectedOption": null,
     "turn": "almuerzo",
     "description": "Gaseosa con hielo",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   },
   {
     "name": "Gaseosa 750ml",
@@ -178,11 +189,12 @@
     "options": ["coca cola", "fanta", "sprite", "canada dry"],
     "extras": [],
     "priceExtra": null,
-    "image": "https://cdn.shoplightspeed.com/shops/604817/files/882430/coca-cola-usa-coke-24-12oz-case.jpg",
+    "image": "https://images.unsplash.com/photo-1520568444554-4698653b539c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "id": "012",
     "selectedOption": null,
     "turn": "almuerzo",
     "description": "Gaseosa con Hielo",
-    "quantity": null
+    "quantity": null,
+    "category": "bebida"
   }
 ]

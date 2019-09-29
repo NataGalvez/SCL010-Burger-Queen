@@ -15,9 +15,6 @@
   z-index: 9;
 }
 
-.menu-list a.active {
-}
-
 .menu-list a.active::before {
   content: "";
   width: 60%;
