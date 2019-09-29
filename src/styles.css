@@ -63,3 +63,16 @@ button {
 input {
   vertical-align: middle;
 }
+
+.orangeBtnMenu {
+  width: 251px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: var(--orange);
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

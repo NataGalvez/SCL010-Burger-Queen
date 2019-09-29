@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
+import { MesasService } from "src/app/services/mesas.service";
 
 @Component({
   selector: "app-order-total",
@@ -7,16 +8,24 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ["./order-total.component.css"]
 })
 export class OrderTotalComponent implements OnInit {
-  constructor(private route: ActivatedRoute) {}
+  tableNumber: number;
+  mesa: any[];
+  totalOrder: number;
 
-  ngOnInit() {}
+  constructor(
+    private route: ActivatedRoute,
+    private mesasService: MesasService
+  ) {}
 
-  getTableId(): number {
-    return +this.route.snapshot.paramMap.get("tableNumber");
+  ngOnInit() {
+    this.route.params.subscribe(params => {
+      this.tableNumber = +params.tableNumber;
+    });
+    this.mesa = this.mesasService.getTable(this.tableNumber);
   }
 
   sendOrder() {
     // Me usa el servicio y necesita el id
-    let id = this.getTableId();
+    let id = this.tableNumber;
   }
 }

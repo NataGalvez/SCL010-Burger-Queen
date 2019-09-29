@@ -20,13 +20,12 @@ export class MesasService {
         this.getQuantity(product.name);
       }
     });
+    this.totalOrder(tableNumber);
   }
   // Remueve los productos a la orden en el número de mesa correspondiente
   removeProductFromOrder(tableNumber, product): any {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
-        console.log(table);
-
         table.orders.forEach((order, index) => {
           if (order.name === product.name) {
             if (order.quantity > 1) {
@@ -38,8 +37,10 @@ export class MesasService {
         });
       }
     });
+    this.totalOrder(tableNumber);
   }
 
+  // Verifica si un producto existe dentro de un arreglo de orden
   private checkIfProductExists(table, productName): boolean {
     let output = false;
     table.orders.forEach(order => {
@@ -79,11 +80,36 @@ export class MesasService {
     return this.tables;
   }
 
+  // Retorna los detalles de 1 mesa, según un número de mesa enviado
+  getTable(tableNumber) {
+    let output = [];
+    this.tables.forEach(table => {
+      if (table.tableNumber === tableNumber) {
+        output = table;
+      }
+    });
+    return output;
+  }
+
   saveClient(name, tableNumber) {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
         table.client = name;
         console.log(table);
+      }
+    });
+  }
+
+  // Calcula el total de una orden
+
+  private totalOrder(tableNumber) {
+    let total = 0;
+    this.tables.forEach(table => {
+      if (table.tableNumber === tableNumber) {
+        table.orders.forEach(order => {
+          total = total + order.price * order.quantity;
+        });
+        table.total = total;
       }
     });
   }
