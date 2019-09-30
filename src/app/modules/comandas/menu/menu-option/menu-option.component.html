@@ -1,20 +1,25 @@
 <div class="menuOption">
-  <button class="blueBtn">
-    <img
-      src="/assets/breakfast-type.png"
-      alt="Ícono desayuno"
-      width="67px"
-      height="67px"
-    />
-    <span>Desayuno</span>
-  </button>
-  <button class="blueBtn">
-    <img
-      src="/assets/lunch-type.png"
-      alt="Ícono desayuno"
-      width="67px"
-      height="67px"
-    />
-    <span>Almuerzo</span>
-  </button>
+  <a [routerLink]="'../desayuno'">
+    <button class="blueBtn" [ngClass]="{ active: turn === 'desayuno' }">
+      <img
+        src="/assets/breakfast-type.png"
+        alt="Ícono desayuno"
+        width="67px"
+        height="67px"
+      />
+      <span>Desayuno</span>
+    </button>
+  </a>
+
+  <a [routerLink]="'../almuerzo'">
+    <button class="blueBtn" [ngClass]="{ active: turn === 'almuerzo' }">
+      <img
+        src="/assets/lunch-type.png"
+        alt="Ícono almuerzo"
+        width="67px"
+        height="67px"
+      />
+      <span>Almuerzo</span>
+    </button>
+  </a>
 </div>

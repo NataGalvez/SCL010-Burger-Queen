@@ -10,6 +10,7 @@ import { MesasService } from "src/app/services/mesas.service";
 })
 export class ItemCardsComponent implements OnInit {
   tableNumber: number;
+  turn: string;
   products: any[];
 
   constructor(
@@ -21,10 +22,15 @@ export class ItemCardsComponent implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.tableNumber = +params.tableNumber;
+      this.turn = params.type;
     });
     this.products = this.cocinaService.getProducts();
   }
   addProducts(product) {
     this.mesasService.addProductToOrder(this.tableNumber, product);
+  }
+  // Agregar extras a productos
+  addExtra(extra) {
+    extra.add = true;
   }
 }

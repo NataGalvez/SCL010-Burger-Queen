@@ -1,22 +1,27 @@
 <div class="group-items">
-  <div class="item-card" *ngFor="let product of products">
-    <div class="img-select">
-      <img class="item-img" src="{{ product.image }}" alt="" />
-      <div class="item-select-price">
-        <select class="item-select" name="itemSelect" id="itemSelect">
-          <option *ngFor="let option of product.options" [value]="option"
-            >{{ option }}
-          </option>
-        </select>
-        <h4 class="item-price">${{ product.price }}</h4>
+  <ng-container *ngFor="let product of products">
+    <div class="item-card" *ngIf="product.turn === turn">
+      <div class="img-select">
+        <img class="item-img" src="{{ product.image }}" alt="" />
+        <div class="item-select-price">
+          <select class="item-select" name="itemSelect" id="itemSelect">
+            <option *ngFor="let option of product.options" [value]="option"
+              >{{ option }}
+            </option>
+          </select>
+          <h4 class="item-price">${{ product.price }}</h4>
+        </div>
       </div>
-    </div>
 
-    <h2>{{ product.name }}</h2>
-    <h3>{{ product.description }}</h3>
-    <br />
-    <button (click)="addProducts(product)" class="orangeBtnMenu">
-      + Añadir al pedido
-    </button>
-  </div>
+      <h2>{{ product.name }}</h2>
+      <h3>{{ product.description }}</h3>
+      <br />
+      <div class="item-extras" *ngFor="let extra of product.extras">
+        <button class="extra-button">{{ extra.name }}</button>
+      </div>
+      <button (click)="addProducts(product)" class="orangeBtnMenu">
+        + Añadir al pedido
+      </button>
+    </div>
+  </ng-container>
 </div>
