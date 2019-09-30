@@ -24,7 +24,7 @@ export class ItemCardsComponent implements OnInit {
       this.tableNumber = +params.tableNumber;
       this.turn = params.type;
     });
-    this.products = this.cocinaService.getProducts();
+    this.products = [...this.cocinaService.getProducts()];
   }
   addProducts(product) {
     this.mesasService.addProductToOrder(this.tableNumber, product);

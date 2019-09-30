@@ -30,7 +30,7 @@
         <button
           class="extra-button"
           [ngClass]="{ blueBackground: extra.add }"
-          (click)="toggleExtra(extra)"
+          (click)="extra.add = !extra.add"
           *ngFor="let extra of product.extras"
         >
           {{ extra.name }}: ${{ extra.price }}

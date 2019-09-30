@@ -21,6 +21,11 @@
         width="35px"
         height="35px"
       />
+      <div *ngFor="let extra of detail.extras">
+        <div *ngIf="extra.add">
+          <h2>{{ extra.name }}</h2>
+        </div>
+      </div>
     </div>
   </div>
   <div class="total-detail">
