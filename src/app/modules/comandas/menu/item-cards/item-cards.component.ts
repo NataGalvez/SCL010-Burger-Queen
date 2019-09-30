@@ -30,7 +30,7 @@ export class ItemCardsComponent implements OnInit {
     this.mesasService.addProductToOrder(this.tableNumber, product);
   }
   // Agregar extras a productos
-  addExtra(extra) {
-    extra.add = true;
+  toggleExtra(extra) {
+    extra.add = !extra.add;
   }
 }

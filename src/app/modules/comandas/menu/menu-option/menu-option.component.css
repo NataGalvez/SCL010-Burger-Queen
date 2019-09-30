@@ -1,7 +1,10 @@
 .menuOption {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 20px;
+}
+.breakfast-button {
+  margin-right: 18px;
 }
 
 .blueBtn {

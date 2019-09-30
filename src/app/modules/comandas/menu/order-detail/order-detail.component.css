@@ -28,10 +28,11 @@
 
 .order-detail h2 {
   color: #7d7d7d;
-  font-size: 18px;
+  font-size: 16px;
 }
 .add-and-remove {
   display: flex;
+  align-items: center;
 }
 
 .total-detail {
