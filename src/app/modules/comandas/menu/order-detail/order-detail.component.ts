@@ -23,9 +23,11 @@ export class OrderDetailComponent implements OnInit {
     this.orderMesa = this.mesasService.getOrderFromTables(this.tableNumber);
   }
   removeProducts(product) {
-    this.mesasService.removeProductFromOrder(this.tableNumber, product);
+    let send = JSON.parse(JSON.stringify(product));
+    this.mesasService.removeProductFromOrder(this.tableNumber, send);
   }
   addProducts(product) {
-    this.mesasService.addProductToOrder(this.tableNumber, product);
+    let send = JSON.parse(JSON.stringify(product));
+    this.mesasService.addProductToOrder(this.tableNumber, send);
   }
 }

@@ -33,7 +33,7 @@
           (click)="extra.add = !extra.add"
           *ngFor="let extra of product.extras"
         >
-          {{ extra.name }}: ${{ extra.price }}
+          {{ extra.name }}: ${{ extra.price | number }}
         </button>
       </div>
       <button (click)="addProducts(product)" class="orangeBtnMenu">

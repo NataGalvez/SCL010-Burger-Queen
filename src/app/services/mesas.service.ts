@@ -25,9 +25,9 @@ export class MesasService {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
         table.orders.forEach((order, index) => {
-          if (order.name === product.name) {
+          if (order.name === product.name && this.sameExtras(order, product)) {
             if (order.quantity > 1) {
-              this.subtractQuantity(table.orders, product.name);
+              this.subtractQuantity(table.orders, product);
             } else {
               table.orders.splice(index, 1);
             }
@@ -42,16 +42,10 @@ export class MesasService {
   private checkIfProductExists(table, product): boolean {
     let output = false;
     table.orders.forEach(order => {
-      if (order.name === product.name) {
+      if (order.name === product.name && this.sameExtras(order, product)) {
         output = true;
-        order.extras.forEach((extra, index) => {
-          if (extra.add !== product.extras[index].add) {
-            output = false;
-          }
-        });
       }
     });
-    console.log(output);
     return output;
   }
 
@@ -67,17 +61,33 @@ export class MesasService {
 
   private subtractQuantity(listProducts, selectedProduct) {
     listProducts.forEach(product => {
-      if (product.name === selectedProduct) {
+      if (
+        product.name === selectedProduct.name &&
+        this.sameExtras(product, selectedProduct)
+      ) {
         product.quantity--;
       }
     });
   }
   private getQuantity(listProducts, selectedProduct) {
     listProducts.forEach(product => {
-      if (product.name === selectedProduct.name) {
+      if (
+        product.name === selectedProduct.name &&
+        this.sameExtras(product, selectedProduct)
+      ) {
         product.quantity++;
       }
     });
+  }
+
+  private sameExtras(product1, product2): boolean {
+    let output = true;
+    product1.extras.forEach((extra, index) => {
+      if (extra.add !== product2.extras[index].add) {
+        output = false;
+      }
+    });
+    return output;
   }
 
   getTables() {
@@ -99,7 +109,6 @@ export class MesasService {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
         table.client = name;
-        console.log(table);
       }
     });
   }
