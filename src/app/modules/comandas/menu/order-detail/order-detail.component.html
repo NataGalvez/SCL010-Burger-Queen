@@ -10,19 +10,27 @@
         class="remove-img"
         src="../../../../../assets/remove_circle_outline-24px.svg"
         (click)="removeProducts(detail)"
+        width="35px"
+        height="35px"
       />
       <h2>{{ detail.quantity }}</h2>
       <img
         class="add-img"
         src="../../../../../assets/add_circle_outline-24px.svg"
         (click)="addProducts(detail)"
+        width="35px"
+        height="35px"
       />
     </div>
   </div>
-  <h3>{{ detail.description }}</h3>
+  <div *ngFor="let extra of detail.extras">
+    <div *ngIf="extra.add">
+      <h2>{{ extra.name }}</h2>
+    </div>
+  </div>
   <div class="total-detail">
     <h3>Total:</h3>
-    <h4>${{ detail.price * detail.quantity }}</h4>
+    <h4>${{ detail.price * detail.quantity | number }}</h4>
   </div>
   <hr />
 </div>

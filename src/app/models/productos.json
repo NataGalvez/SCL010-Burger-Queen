@@ -4,8 +4,8 @@
     "price": [500],
     "haveOptions": false,
     "options": ["Regular"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80",
     "id": "001",
     "selectedOption": null,
@@ -19,8 +19,8 @@
     "price": 700,
     "haveOptions": false,
     "options": ["Regular"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1510279931157-4ca63af8a363?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "002",
     "selectedOption": null,
@@ -34,8 +34,8 @@
     "price": 700,
     "haveOptions": true,
     "options": ["Frutilla", "Maracuyá", "Limón", "Naranja", "Mango", "Mora"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1551718727-b591f6d8fbee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1048&q=80",
     "id": "003",
     "selectedOption": null,
@@ -47,10 +47,10 @@
   {
     "name": "Sandwich de jamón y queso",
     "price": 1000,
-    "haveOptions": false,
+    "haveOptions": true,
     "options": ["Frica", "Molde"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1053&q=80",
     "id": "004",
     "selectedOption": null,
@@ -64,17 +64,19 @@
     "price": 1500,
     "haveOptions": true,
     "options": ["res", "pollo", "vegetariana"],
+    "haveExtras": true,
     "extras": [
       {
         "name": "Queso",
-        "add": false
+        "add": false,
+        "price": 500
       },
       {
         "name": "Huevo",
-        "add": false
+        "add": false,
+        "price": 500
       }
     ],
-    "priceExtra": 500,
     "image": "https://images.unsplash.com/photo-1508737027454-e6454ef45afd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=333&q=80",
     "id": "005",
     "selectedOption": null,
@@ -88,22 +90,25 @@
     "price": 2500,
     "haveOptions": true,
     "options": ["res", "pollo", "vegetariana"],
+
+    "haveExtras": true,
     "extras": [
       {
         "name": "Queso",
-        "add": false
+        "add": false,
+        "price": 500
       },
       {
         "name": "Huevo",
-        "add": false
+        "add": false,
+        "price": 500
       }
     ],
-    "priceExtra": 500,
     "image": "https://images.unsplash.com/photo-1477617722074-45613a51bf6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "006",
     "selectedOption": null,
     "turn": "almuerzo",
-    "description": "Gigante y deliciosa hamburguesa doble con: palta, tomate y lechuga",
+    "description": "Hamburguesa doble con: palta, tomate y lechuga",
     "quantity": null,
     "category": "comida"
   },
@@ -112,8 +117,8 @@
     "price": 500,
     "haveOptions": false,
     "options": ["Medianas"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "id": "007",
     "selectedOption": null,
@@ -127,8 +132,8 @@
     "price": 500,
     "haveOptions": false,
     "options": ["Medianas"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://i.ytimg.com/vi/dcB5VU93AII/maxresdefault.jpg",
     "id": "008",
     "selectedOption": null,
@@ -142,8 +147,8 @@
     "price": 500,
     "haveOptions": true,
     "options": ["con gas", "sin gas"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1550505095-81378a674395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "009",
     "selectedOption": null,
@@ -157,8 +162,8 @@
     "price": 800,
     "haveOptions": true,
     "options": ["con gas", "sin gas"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1550505095-81378a674395?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80",
     "id": "010",
     "selectedOption": null,
@@ -172,8 +177,8 @@
     "price": 700,
     "haveOptions": true,
     "options": ["coca cola", "fanta", "sprite", "canada dry"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1517088587697-8de5e72b421b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80",
     "id": "011",
     "selectedOption": null,
@@ -187,8 +192,8 @@
     "price": 1000,
     "haveOptions": true,
     "options": ["coca cola", "fanta", "sprite", "canada dry"],
+    "haveExtras": false,
     "extras": [],
-    "priceExtra": null,
     "image": "https://images.unsplash.com/photo-1520568444554-4698653b539c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80",
     "id": "012",
     "selectedOption": null,

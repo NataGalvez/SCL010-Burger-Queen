@@ -1,22 +1,44 @@
 <div class="group-items">
-  <div class="item-card" *ngFor="let product of products">
-    <div class="img-select">
-      <img class="item-img" src="{{ product.image }}" alt="" />
-      <div class="item-select-price">
-        <select class="item-select" name="itemSelect" id="itemSelect">
-          <option *ngFor="let option of product.options" [value]="option"
-            >{{ option }}
-          </option>
-        </select>
-        <h4 class="item-price">${{ product.price }}</h4>
+  <ng-container *ngFor="let product of products">
+    <div class="item-card" *ngIf="product.turn === turn">
+      <div class="img-select">
+        <img
+          class="item-img"
+          src="{{ product.image }}"
+          alt="imagen del producto"
+        />
+        <div class="item-select-price">
+          <select class="item-select" name="itemSelect" id="itemSelect">
+            <option *ngFor="let option of product.options" [value]="option"
+              >{{ option }}
+            </option>
+          </select>
+          <img
+            class="arrow-down"
+            src="/assets/keyboard_arrow_down-24px.svg"
+            alt="icono flecha hacia abajo"
+            *ngIf="product.haveOptions"
+          />
+          <h4 class="item-price">${{ product.price }}</h4>
+        </div>
       </div>
-    </div>
 
-    <h2>{{ product.name }}</h2>
-    <h3>{{ product.description }}</h3>
-    <br />
-    <button (click)="addProducts(product)" class="orangeBtnMenu">
-      + Añadir al pedido
-    </button>
-  </div>
+      <h2>{{ product.name }}</h2>
+      <h3>{{ product.description }}</h3>
+      <br />
+      <div class="item-extras">
+        <button
+          class="extra-button"
+          [ngClass]="{ blueBackground: extra.add }"
+          (click)="extra.add = !extra.add"
+          *ngFor="let extra of product.extras"
+        >
+          {{ extra.name }}: ${{ extra.price | number }}
+        </button>
+      </div>
+      <button (click)="addProducts(product)" class="orangeBtnMenu">
+        + Añadir al pedido
+      </button>
+    </div>
+  </ng-container>
 </div>
