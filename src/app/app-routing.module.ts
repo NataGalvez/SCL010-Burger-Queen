@@ -8,6 +8,11 @@ const routes: Routes = [
       import("./modules/home/home.module").then(mod => mod.HomeModule)
   },
   {
+    path: "kitchen",
+    loadChildren: () =>
+      import("./modules/cocina/cocina.module").then(mod => mod.CocinaModule)
+  },
+  {
     path: "",
     redirectTo: "home",
     pathMatch: "full"
