@@ -1,5 +1,10 @@
 .menuOption {
   display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.breakfast-button {
+  margin-right: 18px;
 }
 
 .blueBtn {
@@ -8,8 +13,14 @@
   justify-content: space-between;
   padding: 0 60px;
   max-width: cal(50% - 8px);
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .blueBtn:first-child {
   margin-right: 16px;
+}
+
+.blueBtn.active {
+  opacity: 1;
 }

@@ -1,7 +1,8 @@
 .group-items {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 18px;
+  grid-gap: 40px 18px;
+
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #f7f7f7;
@@ -35,6 +36,9 @@
   border: solid 1px #d6d6d6;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
+.arrow-down {
+  margin-left: -30px;
+}
 
 .item-price {
   background-color: #ffffff;
@@ -62,4 +66,25 @@ h2 {
 
 .orangeBtnMenu {
   margin: 0 auto;
+}
+
+.item-extras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.extra-button {
+  border-radius: 4px;
+  border: solid 1px #d6d6d6;
+  background-color: #ffffff;
+  color: var(--blue);
+  font-size: 13px;
+  padding: 7px 25px;
+}
+
+.blueBackground {
+  color: #ffffff;
+  background-color: var(--blue);
 }

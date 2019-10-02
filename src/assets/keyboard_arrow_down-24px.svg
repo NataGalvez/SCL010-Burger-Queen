@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="keyboard_arrow_down-24px" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:#717171}.cls-2{fill:none}
+        </style>
+    </defs>
+    <path id="Trazado_1" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6z" class="cls-1" data-name="Trazado 1" transform="translate(-3)"/>
+    <path id="Trazado_2" d="M0 0h24v24H0z" class="cls-2" data-name="Trazado 2"/>
+</svg>

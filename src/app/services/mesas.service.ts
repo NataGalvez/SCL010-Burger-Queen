@@ -1,23 +1,21 @@
 import { Injectable } from "@angular/core";
 import mesas from "../models/mesas.json";
-import productos from "../models/productos.json";
 
 @Injectable({
   providedIn: "root"
 })
 export class MesasService {
   private tables: any[] = mesas;
-  private products: any[] = productos;
 
   constructor() {}
   // Añade los productos a la orden en el numero de mesa correspondiente
   addProductToOrder(tableNumber, product): any {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
-        if (!this.checkIfProductExists(table, product.name)) {
+        if (!this.checkIfProductExists(table, product)) {
           table.orders.push(product);
         }
-        this.getQuantity(product.name);
+        this.getQuantity(table.orders, product);
       }
     });
     this.totalOrder(tableNumber);
@@ -27,9 +25,13 @@ export class MesasService {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
         table.orders.forEach((order, index) => {
-          if (order.name === product.name) {
+          if (
+            order.name === product.name &&
+            this.sameExtras(order, product) &&
+            this.haveSameOption(order, product)
+          ) {
             if (order.quantity > 1) {
-              this.subtractQuantity(product.name);
+              this.subtractQuantity(table.orders, product);
             } else {
               table.orders.splice(index, 1);
             }
@@ -41,10 +43,14 @@ export class MesasService {
   }
 
   // Verifica si un producto existe dentro de un arreglo de orden
-  private checkIfProductExists(table, productName): boolean {
+  private checkIfProductExists(table, product): boolean {
     let output = false;
     table.orders.forEach(order => {
-      if (order.name === productName) {
+      if (
+        order.name === product.name &&
+        this.sameExtras(order, product) &&
+        this.haveSameOption(order, product)
+      ) {
         output = true;
       }
     });
@@ -61,21 +67,43 @@ export class MesasService {
     return output;
   }
 
-  private subtractQuantity(selectedProduct) {
-    this.products.forEach(product => {
-      if (product.name === selectedProduct) {
+  private subtractQuantity(listProducts, selectedProduct) {
+    listProducts.forEach(product => {
+      if (
+        product.name === selectedProduct.name &&
+        this.sameExtras(product, selectedProduct) &&
+        this.haveSameOption(product, selectedProduct)
+      ) {
         product.quantity--;
       }
     });
   }
-  private getQuantity(selectedProduct) {
-    this.products.forEach(product => {
-      if (product.name === selectedProduct) {
+  private getQuantity(listProducts, selectedProduct) {
+    listProducts.forEach(product => {
+      if (
+        product.name === selectedProduct.name &&
+        this.sameExtras(product, selectedProduct) &&
+        this.haveSameOption(product, selectedProduct)
+      ) {
         product.quantity++;
       }
     });
   }
+  // Verifica si un producto que esta entrando a una orden tiene los mismos extras que otro que ya está en la orden
+  private sameExtras(product1, product2): boolean {
+    let output = true;
+    product1.extras.forEach((extra, index) => {
+      if (extra.add !== product2.extras[index].add) {
+        output = false;
+      }
+    });
+    return output;
+  }
 
+  // Verifica si un producto que esta entrando a una orden tiene la misma opcion que otro que ya está en la orden
+  private haveSameOption(product1, product2): boolean {
+    return product1.selectedOption === product2.selectedOption;
+  }
   getTables() {
     return this.tables;
   }
@@ -95,7 +123,6 @@ export class MesasService {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
         table.client = name;
-        console.log(table);
       }
     });
   }
