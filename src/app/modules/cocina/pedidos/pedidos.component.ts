@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { MesasService } from "src/app/services/mesas.service";
 
 @Component({
   selector: "app-pedidos",
@@ -6,7 +7,7 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./pedidos.component.css"]
 })
 export class PedidosComponent implements OnInit {
-  constructor() {}
+  constructor(private mesasService: MesasService) {}
 
   ngOnInit() {}
 }
