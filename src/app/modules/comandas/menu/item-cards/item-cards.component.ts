@@ -48,4 +48,8 @@ export class ItemCardsComponent implements OnInit, OnChanges {
   toggleExtra(extra) {
     extra.add = !extra.add;
   }
+
+  selectOption(event, product) {
+    product.selectedOption = event.target.value;
+  }
 }

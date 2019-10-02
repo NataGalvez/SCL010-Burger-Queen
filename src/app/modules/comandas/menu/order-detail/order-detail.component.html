@@ -4,7 +4,9 @@
 </div>
 <div *ngFor="let detail of orderMesa">
   <div class="order-detail">
-    <h2>{{ detail.name }}</h2>
+    <h2>
+      {{ detail.name }}
+    </h2>
     <div class="add-and-remove">
       <img
         class="remove-img"
@@ -23,6 +25,9 @@
       />
     </div>
   </div>
+  <span *ngIf="detail.haveOptions"
+    ><h2>{{ detail.selectedOption }}</h2></span
+  >
   <div *ngFor="let extra of detail.extras">
     <div *ngIf="extra.add">
       <h2>{{ extra.name }}</h2>
