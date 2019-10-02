@@ -25,7 +25,11 @@ export class MesasService {
     this.tables.forEach(table => {
       if (table.tableNumber === tableNumber) {
         table.orders.forEach((order, index) => {
-          if (order.name === product.name && this.sameExtras(order, product)) {
+          if (
+            order.name === product.name &&
+            this.sameExtras(order, product) &&
+            this.haveSameOption(order, product)
+          ) {
             if (order.quantity > 1) {
               this.subtractQuantity(table.orders, product);
             } else {
@@ -42,7 +46,11 @@ export class MesasService {
   private checkIfProductExists(table, product): boolean {
     let output = false;
     table.orders.forEach(order => {
-      if (order.name === product.name && this.sameExtras(order, product)) {
+      if (
+        order.name === product.name &&
+        this.sameExtras(order, product) &&
+        this.haveSameOption(order, product)
+      ) {
         output = true;
       }
     });
@@ -63,7 +71,8 @@ export class MesasService {
     listProducts.forEach(product => {
       if (
         product.name === selectedProduct.name &&
-        this.sameExtras(product, selectedProduct)
+        this.sameExtras(product, selectedProduct) &&
+        this.haveSameOption(product, selectedProduct)
       ) {
         product.quantity--;
       }
@@ -73,13 +82,14 @@ export class MesasService {
     listProducts.forEach(product => {
       if (
         product.name === selectedProduct.name &&
-        this.sameExtras(product, selectedProduct)
+        this.sameExtras(product, selectedProduct) &&
+        this.haveSameOption(product, selectedProduct)
       ) {
         product.quantity++;
       }
     });
   }
-
+  // Verifica si un producto que esta entrando a una orden tiene los mismos extras que otro que ya está en la orden
   private sameExtras(product1, product2): boolean {
     let output = true;
     product1.extras.forEach((extra, index) => {
@@ -90,6 +100,10 @@ export class MesasService {
     return output;
   }
 
+  // Verifica si un producto que esta entrando a una orden tiene la misma opcion que otro que ya está en la orden
+  private haveSameOption(product1, product2): boolean {
+    return product1.selectedOption === product2.selectedOption;
+  }
   getTables() {
     return this.tables;
   }

@@ -8,7 +8,12 @@
           alt="imagen del producto"
         />
         <div class="item-select-price">
-          <select class="item-select" name="itemSelect" id="itemSelect">
+          <select
+            class="item-select"
+            name="itemSelect"
+            id="itemSelect"
+            (change)="selectOption($event, product)"
+          >
             <option *ngFor="let option of product.options" [value]="option"
               >{{ option }}
             </option>
