@@ -27,5 +27,6 @@ export class OrderTotalComponent implements OnInit {
   sendOrder() {
     // Me usa el servicio y necesita el id
     let id = this.tableNumber;
+    this.mesasService.sendOrderToKitchen(id);
   }
 }

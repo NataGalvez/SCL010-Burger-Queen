@@ -8,6 +8,8 @@ import { MesasService } from "src/app/services/mesas.service";
 })
 export class PedidosComponent implements OnInit {
   constructor(private mesasService: MesasService) {}
-
-  ngOnInit() {}
+  tables: any[];
+  ngOnInit() {
+    this.tables = this.mesasService.getTables();
+  }
 }

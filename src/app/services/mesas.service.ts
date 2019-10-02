@@ -140,4 +140,22 @@ export class MesasService {
       }
     });
   }
+  sendOrderToKitchen(tableNumber) {
+    this.tables.forEach(table => {
+      let statusOrder = [
+        {
+          sent: true,
+          doing: false,
+          done: false,
+          delivered: false
+        }
+      ];
+      if (table.tableNumber === tableNumber) {
+        let orderArr = [];
+        orderArr.push(table.orders);
+        orderArr.push(statusOrder);
+        console.log(orderArr);
+      }
+    });
+  }
 }
