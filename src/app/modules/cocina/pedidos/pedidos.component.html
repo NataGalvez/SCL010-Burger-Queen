@@ -6,7 +6,7 @@
   <div class="list">
     <ng-container *ngFor="let order of orders">
       <div class="order" *ngIf="!order.ready">
-        <div>{{ order.name }}</div>
+        <div>{{ order.name }} - {{ order.date | date: "shortTime" }}</div>
         <div class="order-container">
           <div *ngFor="let detail of order.orders">
             nombre: {{ detail.name }}<br />
