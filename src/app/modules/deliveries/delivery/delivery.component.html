@@ -5,7 +5,7 @@
   </div>
   <div class="list">
     <ng-container *ngFor="let order of orders">
-      <div class="order" *ngIf="order.ready">
+      <div class="order" *ngIf="order.ready && !order.delivered">
         <div class="table-number">
           <h2>{{ order.name }}</h2>
         </div>

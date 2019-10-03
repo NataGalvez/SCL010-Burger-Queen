@@ -1,7 +1,6 @@
 .pedidos {
   padding: 20px 80px;
   min-height: 70.7vh;
-  max-width: 830px;
 }
 
 .list {
@@ -67,4 +66,7 @@ p {
 .final-button {
   display: flex;
   justify-content: center;
+}
+.order-container {
+  width: 237px;
 }
