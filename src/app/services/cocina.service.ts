@@ -20,7 +20,6 @@ export class CocinaService {
     copyOrder.delivered = false;
     copyOrder.date = new Date();
     this.listOfOrders.push(copyOrder);
-    console.log(this.listOfOrders);
   }
 
   getOrders() {

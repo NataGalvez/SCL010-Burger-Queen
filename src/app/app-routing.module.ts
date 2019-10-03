@@ -23,6 +23,13 @@ const routes: Routes = [
       import("./modules/comandas/comandas.module").then(
         mod => mod.ComandasModule
       )
+  },
+  {
+    path: "deliveries",
+    loadChildren: () =>
+      import("./modules/deliveries/deliveries.module").then(
+        mod => mod.DeliveriesModule
+      )
   }
 ];
 
