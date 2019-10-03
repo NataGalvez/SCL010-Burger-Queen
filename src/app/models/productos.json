@@ -1,4 +1,5 @@
-[{
+[
+  {
     "name": "Café americano",
     "price": 500,
     "haveOptions": false,
@@ -66,7 +67,8 @@
     "haveOptions": true,
     "options": ["Res", "Pollo", "Vegetariana"],
     "haveExtras": true,
-    "extras": [{
+    "extras": [
+      {
         "name": "Queso",
         "add": false,
         "price": 500
@@ -92,7 +94,8 @@
     "options": ["Res", "Pollo", "Vegetariana"],
 
     "haveExtras": true,
-    "extras": [{
+    "extras": [
+      {
         "name": "Queso",
         "add": false,
         "price": 500

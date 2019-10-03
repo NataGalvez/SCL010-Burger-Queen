@@ -36,6 +36,9 @@
   border: solid 1px #d6d6d6;
   box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
+.arrow-down {
+  margin-left: -30px;
+}
 
 .arrow-down {
   margin-left: -30px;
