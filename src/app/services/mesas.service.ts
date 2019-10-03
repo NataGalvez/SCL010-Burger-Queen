@@ -140,4 +140,13 @@ export class MesasService {
       }
     });
   }
+
+  cleanTableOrder(tableNumber) {
+    for (let i = 0; i < this.tables.length; i++) {
+      if (this.tables[i].tableNumber === tableNumber) {
+        this.tables[i].orders = [];
+        this.tables[i].total = 0;
+      }
+    }
+  }
 }

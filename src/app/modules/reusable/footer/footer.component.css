@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 0 80px;
   align-items: center;
+  bottom: 0;
 }
 .copyright {
   display: flex;
