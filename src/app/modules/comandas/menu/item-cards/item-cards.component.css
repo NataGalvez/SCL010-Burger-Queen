@@ -75,10 +75,3 @@ h2 {
   justify-content: space-between;
   margin-bottom: 20px;
 }
-
-
-
-.blueBackground {
-  color: #ffffff;
-  background-color: var(--blue);
-}

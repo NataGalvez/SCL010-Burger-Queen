@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { MesasService } from "src/app/services/mesas.service";
+import { CocinaService } from "src/app/services/cocina.service";
 
 @Component({
   selector: "app-pedidos",
@@ -7,9 +7,12 @@ import { MesasService } from "src/app/services/mesas.service";
   styleUrls: ["./pedidos.component.css"]
 })
 export class PedidosComponent implements OnInit {
-  constructor(private mesasService: MesasService) {}
-  tables: any[];
+  orders: any[];
+
+  constructor(private cocinaService: CocinaService) {}
+
   ngOnInit() {
-    this.tables = this.mesasService.getTables();
+    this.orders = this.cocinaService.getOrders();
+    console.log(this.orders);
   }
 }

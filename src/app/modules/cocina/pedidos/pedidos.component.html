@@ -1,19 +1,53 @@
 <app-header></app-header>
-<div>
-  <h1>Pedidos Pendientes</h1>
-</div>
-<div>
-  <div>Mesa x</div>
-  <div class="order-container">
-    <div>
-      pedidos x
-    </div>
-    <div><button class="extra-button">Preparar </button>
-      <button class="extra-button">Listo</button>
-      <div><button class="orangeBtn">Enviar Pedidos</button></div>
-    </div>
+<div class="pedidos">
+  <div>
+    <h1>Pedidos Pendientes</h1>
   </div>
-
-
+  <div class="list">
+    <ng-container *ngFor="let order of orders">
+      <div class="order" *ngIf="!order.ready">
+        <div>{{ order.name }}</div>
+        <div class="order-container">
+          <div *ngFor="let detail of order.orders">
+            nombre: {{ detail.name }}<br />
+            descripcion: {{ detail.selectedOption }}<br />
+            cantidad: {{ detail.quantity }}<br />
+            extras:
+            <span *ngFor="let extra of detail.extras">
+              <ng-container *ngIf="extra.add">
+                {{ extra.name }}
+              </ng-container>
+            </span>
+          </div>
+          <div>
+            <button
+              class="extra-button"
+              (click)="order.doing = !order.doing"
+              [ngClass]="{ blueBackground: order.doing }"
+            >
+              Preparar
+            </button>
+            <button
+              class="extra-button"
+              (click)="order.done = !order.done"
+              [ngClass]="{ blueBackground: order.done }"
+            >
+              Listo
+            </button>
+            <div>
+              <button
+                class="orangeBtn"
+                *ngIf="order.doing && order.done"
+                (click)="order.ready = true"
+              >
+                Enviar Pedidos
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
 </div>
+
 <app-footer></app-footer>

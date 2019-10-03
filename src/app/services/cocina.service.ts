@@ -16,9 +16,14 @@ export class CocinaService {
     copyOrder.sent = true;
     copyOrder.doing = false;
     copyOrder.done = false;
+    copyOrder.ready = false;
     copyOrder.delivered = false;
     copyOrder.date = new Date();
     this.listOfOrders.push(copyOrder);
     console.log(this.listOfOrders);
+  }
+
+  getOrders() {
+    return this.listOfOrders;
   }
 }

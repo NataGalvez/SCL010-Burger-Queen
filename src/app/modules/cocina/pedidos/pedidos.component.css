@@ -1,0 +1,17 @@
+.pedidos {
+  padding: 20px 80px;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list .order {
+  max-width: 257px;
+}
+
+.orangeBtn {
+  max-width: 100%;
+  height: 42px;
+}

@@ -142,12 +142,11 @@ export class MesasService {
   }
 
   cleanTableOrder(tableNumber) {
-    this.tables.forEach(table => {
-      if (table.tableNumber === tableNumber) {
-        console.log(table);
-        table.orders = [];
-        console.log(table);
+    for (let i = 0; i < this.tables.length; i++) {
+      if (this.tables[i].tableNumber === tableNumber) {
+        this.tables[i].orders = [];
+        this.tables[i].total = 0;
       }
-    });
+    }
   }
 }
