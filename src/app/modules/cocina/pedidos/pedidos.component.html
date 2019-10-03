@@ -12,9 +12,8 @@
         <div class="order-container">
           <div class="order-card" *ngFor="let detail of order.orders">
             <h2>{{ detail.name }}</h2>
-            <br />
             <p>
-              Descripcion: <span> {{ detail.selectedOption }}</span>
+              Descripción: <span> {{ detail.selectedOption }}</span>
             </p>
             <p>
               Cantidad: <span> {{ detail.quantity }}</span>
@@ -47,7 +46,7 @@
               </button>
             </div>
 
-            <div>
+            <div class="final-button">
               <button
                 class="orangeBtn"
                 *ngIf="order.doing && order.done"
