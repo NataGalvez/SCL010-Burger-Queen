@@ -40,6 +40,10 @@
   margin-left: -30px;
 }
 
+.arrow-down {
+  margin-left: -30px;
+}
+
 .item-price {
   background-color: #ffffff;
   padding: 10px 15px;
@@ -73,18 +77,4 @@ h2 {
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
-}
-
-.extra-button {
-  border-radius: 4px;
-  border: solid 1px #d6d6d6;
-  background-color: #ffffff;
-  color: var(--blue);
-  font-size: 13px;
-  padding: 7px 25px;
-}
-
-.blueBackground {
-  color: #ffffff;
-  background-color: var(--blue);
 }

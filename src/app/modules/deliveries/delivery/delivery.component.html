@@ -1,0 +1,44 @@
+<app-header></app-header>
+<div class="pedidos">
+  <div class="title">
+    <h1>Pendientes de entregar</h1>
+  </div>
+  <div class="list">
+    <ng-container *ngFor="let order of orders">
+      <div class="order" *ngIf="order.ready && !order.delivered">
+        <div class="table-number">
+          <h2>{{ order.name }}</h2>
+        </div>
+        <div class="order-container">
+          <div class="order-card" *ngFor="let detail of order.orders">
+            <h2>{{ detail.name }}</h2>
+            <p>
+              Descripción: <span>{{ detail.selectedOption }}</span>
+            </p>
+            <p>
+              Cantidad: <span>{{ detail.quantity }}</span>
+            </p>
+            <p>
+              Extras:
+              <span *ngFor="let extra of detail.extras">
+                <ng-container *ngIf="extra.add">
+                  {{ extra.name }}
+                </ng-container>
+              </span>
+            </p>
+            <hr />
+          </div>
+          <div>
+            <div class="final-button">
+              <button class="orangeBtn" (click)="order.delivered = true">
+                Entregado
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<app-footer></app-footer>

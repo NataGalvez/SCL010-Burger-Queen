@@ -8,6 +8,11 @@ const routes: Routes = [
       import("./modules/home/home.module").then(mod => mod.HomeModule)
   },
   {
+    path: "kitchen",
+    loadChildren: () =>
+      import("./modules/cocina/cocina.module").then(mod => mod.CocinaModule)
+  },
+  {
     path: "",
     redirectTo: "home",
     pathMatch: "full"
@@ -17,6 +22,13 @@ const routes: Routes = [
     loadChildren: () =>
       import("./modules/comandas/comandas.module").then(
         mod => mod.ComandasModule
+      )
+  },
+  {
+    path: "deliveries",
+    loadChildren: () =>
+      import("./modules/deliveries/deliveries.module").then(
+        mod => mod.DeliveriesModule
       )
   }
 ];
